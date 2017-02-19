@@ -1,7 +1,7 @@
 {
-  "name": "koahub-demo-no-babel",
+  "name": "koahub-demo-promise",
   "version": "0.0.1",
-  "description": "koahub-demo-no-babel",
+  "description": "koahub-demo-promise",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"

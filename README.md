@@ -1,4 +1,4 @@
-## KoaHub.js demo (No Babel)
+## KoaHub.js demo (Promise)
 
 #### KoaHub.js
 
@@ -14,9 +14,9 @@ github地址：http://github.com/koahubjs/koahub
 
 ```javascript
 // 下载demo
-git clone https://github.com/koahubjs/koahub-demo-no-babel.git
+git clone https://github.com/koahubjs/koahub-demo-promise.git
 // 进入项目
-cd koahub-demo-no-babel
+cd koahub-demo-promise
 // 安装依赖
 npm install
 // 启动项目
