@@ -41,4 +41,18 @@ koa.use(function (ctx, next) {
     return next();
 });
 
+koa.use(convert(function *(next) {
+    try {
+        yield next;
+    } catch (err) {
+
+        if (err.code == 'ER_ACCESS_DENIED_ERROR') {
+            console.error('数据库链接失败')
+        }
+        if (err.code == 'ER_NO_SUCH_TABLE') {
+            console.error('数据库中没有对应的表')
+        }
+    }
+}));
+
 app.run();
