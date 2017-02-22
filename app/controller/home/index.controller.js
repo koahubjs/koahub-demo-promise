@@ -8,10 +8,6 @@ module.exports = class extends koahub.controller {
     index() {
 
         var context = {version: process.version, time: new Date()};
-        var that = this;
-
-        return this.model('article').getList({}).then(function (article) {
-            return that.render('index', {context: context, article: article});
-        });
+        return this.render('index', context);
     }
 }
